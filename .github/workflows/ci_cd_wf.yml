@@ -30,7 +30,7 @@ jobs:
           python -m pytest -v --cov=src tests | tee pytest-coverage.txt
 
       - name: Pytest coverage comment
-        uses: SebasMeza/week1-devops@main
+        uses: MishaKav/pytest-coverage-comment@main
         with:
             pytest-coverage-path: ./pytest-coverage.txt
             junitxml-path: ./pytest.xml
